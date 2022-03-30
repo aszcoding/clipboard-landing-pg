@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*MY CODE*/
+
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+header{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(253, 253, 253, 0)), url("/images/bg-header-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+svg{
+    display:block;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+h1{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+h2{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+p{
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.75rem;
+    padding-bottom: 3rem;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+button{
+    margin: 0.75rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 1rem;
+    width: 100%;
+    border: 1px 1.5px 5px 1.5px solid;
+    cursor: pointer;
+} 
+
+.iOS_button{
+    background-color: hsl(171, 66%, 44%);
+    border-color: hsl(171, 71%, 35%);
+}
+
+.Mac_button{
+    background-color: hsl(233, 100%, 69%);
+    border-color: hsl(233, 54%, 54%);
+}
+
+img{
+    width: 75%;
+    padding-bottom: 5rem;
+}
+
+#access_clipboard{
+    padding-top: 9rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    padding-bottom: 1rem;
+}
+
+.icons{
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+}
+
+.company_logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+nav{
+    background-color: hsla(200, 21%, 92%, 0.767);
+    padding: 2rem;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+a:hover{
+    cursor: pointer;  
+}
+
+nav>a:hover{
+    color: hsl(171, 66%, 44%);
+}
+.small_logo{
+    transform: scale(0.4);  
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.social_media_icons{
+    display: flex;
+}
+
+.social_media_icons>svg{
+    fill: hsl(210, 10%, 33%);
+}
+
+.social_media_icons>svg:hover{
+    cursor: pointer;
+    fill: hsl(171, 66%, 44%)!important;
+}
+
+.name, .frontend_mentor{
+    display: inline-block;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 768px){
+
+    div>p, body>p{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    button{
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    header{
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(253, 253, 253, 0)), url("/images/bg-header-desktop.png");
+    }
+
+    div>p, body>p{
+        max-width: 41%;
+        margin: 0 auto;
+    }
+
+    button{
+        max-width: 30%;
+    }
+
+    .buttons{
+        flex-direction: row;
+    }
+
+    .computer_img{
+        float: left;
+        max-width: 60%;
+        margin-right: 90px;
+    }
+
+    section{
+        display: block;
+        text-align: left;
+        margin-left: 38rem;
+    }
+
+    .quick_search{
+        padding-top: 5rem;
+    }
+
+    #access_clipboard{
+        padding-top: 20rem;
+    }
+
+    .devices_img{
+        max-width: 70%;
+    }
+
+    .company_logos{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .company_logos>img{
+        padding-right: 6rem;
+        margin: 0 auto;
+    }
+
+    #google{
+        padding-left: 5rem;
+    }
+
+    .features{
+        display: inline-block;
+        max-width: 20rem;
+        margin: auto;
+        text-align: center;
+        align-items: baseline;
+    }
+
+    nav{
+        max-height: 100px;
+        flex-wrap: wrap;
+        column-count: 3;
+        text-align: justify;
+    }
+
+    .social_media_icons{
+        flex-direction: row;
+        width: 25%;
+        margin-left: -12rem;
+    }
+
+    .small_logo{
+        float: left;
+        padding-bottom: 2rem;
+        padding-right: 6rem;
+        margin-top: -1rem;
+    }
+
+}

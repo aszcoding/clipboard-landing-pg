@@ -140,6 +140,13 @@ h3{
     padding-bottom: 1rem;
 }
 
+.tools{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
 .icons{
     padding-bottom: 2.5rem;
     padding-top: 2rem;
@@ -157,28 +164,29 @@ h3{
     padding-bottom: 4rem;
 }
 
-nav{
+.footer-banner{
     background-color: hsla(200, 21%, 92%, 0.767);
     padding: 2rem;
 }
 
 a{
-    display: flex;
     flex-direction: column;
+    line-height: 2.5rem;
+    list-style: none;
     color: hsl(210, 10%, 33%);
     text-decoration: none;
     font-weight: 400;
     padding: 1rem;
-    cursor: pointer;
 }
 
 a:hover{
     cursor: pointer;  
 }
 
-nav>a:hover{
+li>a:hover{
     color: hsl(171, 66%, 44%);
 }
+
 .small_logo{
     transform: scale(0.4);  
     padding-top: 0;
@@ -187,16 +195,21 @@ nav>a:hover{
 
 .social_media_icons{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
 }
 
 .social_media_icons>svg{
     fill: hsl(210, 10%, 33%);
+    margin: 2rem;
 }
 
 .social_media_icons>svg:hover{
     cursor: pointer;
     fill: hsl(171, 66%, 44%)!important;
 }
+
 
 .name, .frontend_mentor{
     display: inline-block;
@@ -274,32 +287,47 @@ nav>a:hover{
         padding-left: 5rem;
     }
 
-    .features{
+    .tools{
+        display: flex;
+    }
+
+    .blacklists, .snippets, .preview{
         display: inline-block;
-        max-width: 20rem;
+        max-width: 24rem;
         margin: auto;
         text-align: center;
-        align-items: baseline;
     }
 
-    nav{
-        max-height: 100px;
-        flex-wrap: wrap;
+    .snippets, .preview{
+        padding-bottom: 1rem;
+    }
+
+    .footer-banner{
+        max-height: 80px;
+        padding-top: 4rem;
+    }
+
+    ul{
         column-count: 3;
+        flex-wrap: wrap;
         text-align: justify;
-    }
-
-    .social_media_icons{
-        flex-direction: row;
-        width: 25%;
-        margin-left: -12rem;
-    }
-
-    .small_logo{
-        float: left;
-        padding-bottom: 2rem;
-        padding-right: 6rem;
+        max-width: fit-content;
+        margin-left: 20rem;
         margin-top: -1rem;
+    }
+
+
+   .social_media_icons{
+        margin-top: -10rem;
+        margin-left: 50rem;
+
+    } 
+
+    .footer-logo{
+        float: left;
+        padding-right: 6rem;
+        padding-left: 5rem;
+        margin-top: -2.5rem; 
     }
 
 }
